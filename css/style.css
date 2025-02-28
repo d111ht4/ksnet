@@ -82,7 +82,7 @@ color: #3d3e40; padding-top: 22px;}
     color: #3d3e40;}
 #cont .pt3 .ad h3 span {font-size: 13px; color: #85868a; font-weight: bold;}
 
-footer {height: 132px; width: 1200px; padding-top: 30px; position: absolute;
+footer {height: 132px; width: 1200px; padding-top: 30px; position: relative;
 left: calc(50% - 600px);}
 footer .site ul li {color: #666666; font-weight: bold; float: left;
 margin-right: 25px; font-size: 15px; line-height: 56px;}
