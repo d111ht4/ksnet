@@ -92,12 +92,18 @@ color: #fff; display: flex; justify-content: space-between; align-items: center;
 padding-left: 30px; padding-right: 20px; box-sizing: border-box;
 position: absolute; right: 0; top: 0; cursor: pointer;}
 
-footer .site p:hover ~ .hv, footer .site .hv:hover  {display: block;}
+footer .site p:hover ~ .hv, footer .site .hv:hover {display: block;}
 
-footer .site .hv {position: absolute; right: 0; top: -280px; display: none;}
+footer .site .hv {position: absolute; right: 0; top: -300px; display: none;}
 footer .site .hv a {width: 256px; height: 40px; background: #ffffff;
     color: #8292a2; display: flex; justify-content: center; align-items: center;
-    box-sizing: border-box; font-weight: 600; font-size: 15px;} 
+    box-sizing: border-box; font-weight: 600; font-size: 15px; transition: 0.3s;
+    box-sizing: border-box; border: 1px solid #8292a2; border-top: none;
+    border-bottom: none; opacity: 100;}
+footer .site .hv a:first-child {height: 60px; align-items: normal; padding-top: 30px;
+    border-top: 1px solid #8292a2;}
+
+footer .site .hv a:hover {color: #000; font-size: 16; font-weight: bold;}
 
 footer .adr {border-top:1px solid #ccc;}
 
@@ -111,9 +117,12 @@ font-weight: 500; padding-top: 20px; padding-bottom: 16px; line-height: 1.6;}
     padding-left: 46px;}
 #cmain .wrap h3 span {font-weight: 900;}
 
-#ccont .wrap .qm {width: 240px; height: 215px; margin-top: 56px; float: left;}
+#ccont .wrap .qm {width: 240px; height: 215px; margin-top: 56px; float: left;
+position: fixed; background: #fff; z-index: 80;}
 #ccont .wrap .qm h3 {font-size: 33px; color: #4064b0; font-weight: normal;
 padding-left: 38px;}
+
+.qlank {width: 240px; height: 215px; margin-top: 56px; float: left;}
 
 #ccont .wrap .qm ul {margin-top: 30px; }
 
